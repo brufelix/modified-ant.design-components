@@ -1,0 +1,23 @@
+.ant-picker {
+    min-width: 180px;
+    width: 15%;
+  }
+  
+  div.ant-picker-focused {
+    border-color: #52DF9A;
+    border-right-width: 1px !important;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 1px #52DF9A;
+    box-shadow: 0 0 3px 1px #52DF9A;
+  }
+  
+  div.ant-picker:hover, .ant-picker-focused {
+    border-color: #52DF9A;
+    border-right-width: 1px !important;
+  }
+  
+  .ant-picker-suffix span.anticon-calendar > svg {
+    width: 1.5em;
+    height: 1.5em;
+    color: #52DF9A;
+  }
