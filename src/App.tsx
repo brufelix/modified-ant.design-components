@@ -4,19 +4,33 @@ import Menu from './components/Menu'
 import Content from './components/Content'
 import './App.less'
 
-const { Header, Footer, Sider } = Layout
+const { Header, Footer } = Layout
 
 const App = () => (
   <>
-    <Layout style={{ height: "100vh" }}>
-      <Header style={{fontSize: "2.5em", height: 64}}>Governo estado do Ceará</Header>
-      <Layout>
-        <Sider trigger={null}>
-          <Menu />
-        </Sider>
+    <Layout style={{ height: "auto" }}>
+      <Header style={{
+        fontSize: "2em", height: 64, backgroundColor: "#52DF9A",
+        borderBottom: 'solid 4px #00B894'
+      }}>Governo estado do Ceará</Header>
+      <Layout style={{ display: 'flex', flexDirection: 'row' }} >
+        <Menu />
         <Content />
       </Layout>
-      <Footer>Footer</Footer>
+      <Footer style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        width: '100%',
+        paddingLeft: 20
+      }} >
+        <a href="/">Enviar Feedback</a>
+        <a href="/">Participar de estudos com usuário</a>
+        <a href="/">Privacidade</a>
+        <a href="/">Termos</a>
+        <a href="/">Central de Ajuda</a>
+        <a href="/">Sobre a Google</a>
+      </Footer>
     </Layout>
   </>
 )
