@@ -21,6 +21,7 @@ module.exports = {
                 '@slider-track-background-color': '#f2f2f2',
                 '@layout-header-background': '#f2f2f2',
                 '@input-icon-hover-color': '#00B894',
+                '@drawer-bg': '#f2f2f2',
               },
               javascriptEnabled: true,
             },

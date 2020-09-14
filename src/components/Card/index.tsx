@@ -2,6 +2,18 @@ import React from 'react'
 import { Image } from 'antd'
 import img from '../../assets/img/imggec.jpg'
 
+type TCardProps = {
+    name: string
+}
+
+const stylePTitle: React.CSSProperties = {
+    position: 'absolute',
+    color: 'white',
+    height: 'auto',
+    paddingTop: 140,
+    paddingLeft: 20
+}
+
 const styleContainer: React.CSSProperties = {
     display: 'flex',
     height: 'auto',
@@ -11,17 +23,12 @@ const styleContainer: React.CSSProperties = {
     margin: 10
 }
 
-function Card(): JSX.Element {
+function Card(props: TCardProps): JSX.Element {
     return (
         <>
             <div style={styleContainer}>
                 <Image src={img} alt="Gov" width="100%" height="175px" />
-                <p style={{
-                    position: 'absolute',
-                    color: 'white',
-                    height: 'auto',
-                    bottom: 0,
-                }}>Rio de Janeiro</p>
+                <p style={stylePTitle}>{props.name}</p>
             </div>
         </>
     )
