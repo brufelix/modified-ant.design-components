@@ -2,7 +2,7 @@ import React from 'react'
 import { Layout } from 'antd'
 import Menu from './components/Menu'
 import Content from './components/Content'
-import Header from './components/Header'
+import Header from './components/Header/'
 import './App.less'
 
 const styleFooter: React.CSSProperties = {

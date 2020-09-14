@@ -22,8 +22,9 @@ const styleButton: React.CSSProperties = {
     margin: 10
 }
 
-export default (): JSX.Element =>
-    <>
+function CreateTrip(): JSX.Element{
+    return (
+        <>
         <div style={styleContainer}>
             <div style={{
                 display: 'flex', flexDirection: 'row',
@@ -40,3 +41,7 @@ export default (): JSX.Element =>
             </Button>
         </div>
     </>
+    )
+}
+
+export default CreateTrip
